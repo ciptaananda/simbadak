@@ -2,24 +2,19 @@
 
 namespace Config;
 
-use PDO;
-use PDOException;
-
 class Database{
  
 	var $host = "localhost";
-	var $username = "root";
-	var $pass = "";
-	var $db = "bpnb";
-    var $driver = 'mysql';
+	var $username = "postgres";
+	var $password = "oaxudowh9";
+	var $dbname = "bpnb";
+    var $driver = 'pgsql';
     var $conn;
  
 	function __construct(){
-        try {
-            $this->conn = new PDO($this->driver.":host={$this->host};dbname={$this->db}", $this->username, $this->pass);
-        } catch (PDOException $th) {
-            echo "Tidak dapat terkoneksi dengan database";
-            die();
+        $this->conn = pg_connect("host='$this->host' dbname='$this->dbname' user='$this->username' password='$this->password'");
+        if (!$this->conn) {
+            echo 'Koneksi database gagal dibuat!';
         }
 	}
  

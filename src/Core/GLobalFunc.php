@@ -63,4 +63,9 @@ class GlobalFunc
         $response->headers->set('Content-Type', $content_type);
         return $response;
     }
+
+    public function esc_str($conn, $data)
+    {
+        return pg_escape_string($conn, $data);
+    }
 }
