@@ -6,7 +6,7 @@ class Database{
  
 	var $host = "localhost";
 	var $username = "postgres";
-	var $password = "oaxudowh9";
+	var $password = "siegfriedZ0912";
 	var $dbname = "bpnb";
     var $driver = 'pgsql';
     var $conn;

@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-dev',
+    'version' => 'dev-dev',
     'aliases' => 
     array (
     ),
-    'reference' => '0ec226b779acdbabc2bcc15204f699cfdc40601d',
+    'reference' => '89e04ea951d1a43d2672a030f3fae48791291ccd',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-dev',
+      'version' => 'dev-dev',
       'aliases' => 
       array (
       ),
-      'reference' => '0ec226b779acdbabc2bcc15204f699cfdc40601d',
+      'reference' => '89e04ea951d1a43d2672a030f3fae48791291ccd',
     ),
     'psr/event-dispatcher' => 
     array (

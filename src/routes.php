@@ -411,4 +411,40 @@ $routes->add('lingkunganKeluargaDelete', new Route('/lingkungan-keluarga/{id}/de
     '_controller' => 'App\LingkunganKeluarga\Controller\LingkunganKeluargaController::delete',
 ]));
 
+
+//Crud penelitianKegiatan
+$routes->add('penelitianKegiatan', new Route('/penelitian-kegiatan', [
+    '_controller' => 'App\PenelitianKegiatan\Controller\PenelitianKegiatanController::index',
+]));
+$routes->add('penelitianKegiatanSelectOne', new Route('/penelitian-kegiatan/get/{id}', [
+    '_controller' => 'App\PenelitianKegiatan\Controller\PenelitianKegiatanController::readOne',
+]));
+$routes->add('penelitianKegiatanCreate', new Route('/penelitian-kegiatan/create', [
+    '_controller' => 'App\PenelitianKegiatan\Controller\PenelitianKegiatanController::create',
+]));
+$routes->add('penelitianKegiatanDelete', new Route('/penelitian-kegiatan/{id}/delete', [
+    '_controller' => 'App\PenelitianKegiatan\Controller\PenelitianKegiatanController::delete',
+]));
+$routes->add('penelitianKegiatanUpdate', new Route('/penelitian-kegiatan/{id}/update', [
+    '_controller' => 'App\PenelitianKegiatan\Controller\PenelitianKegiatanController::update',
+]));
+
+//Crud penelitianKomunitas
+$routes->add('penelitianKomunitas', new Route('/penelitian-komunitas', [
+    '_controller' => 'App\PenelitianKomunitas\Controller\PenelitianKomunitasController::index',
+]));
+$routes->add('penelitianKomunitasSelectOne', new Route('/penelitian-komunitas/get/{id}', [
+    '_controller' => 'App\PenelitianKomunitas\Controller\PenelitianKomunitasController::readOne',
+]));
+$routes->add('penelitianKomunitasCreate', new Route('/penelitian-komunitas/create', [
+    '_controller' => 'App\PenelitianKomunitas\Controller\PenelitianKomunitasController::create',
+]));
+$routes->add('penelitianKomunitasDelete', new Route('/penelitian-komunitas/{id}/delete', [
+    '_controller' => 'App\PenelitianKomunitas\Controller\PenelitianKomunitasController::delete',
+]));
+$routes->add('penelitianKomunitasUpdate', new Route('/penelitian-komunitas/{id}/update', [
+    '_controller' => 'App\PenelitianKomunitas\Controller\PenelitianKomunitasController::update',
+]));
+
+
 return $routes;
